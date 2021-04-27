@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/space"
+        android:background="@color/boxColor"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/boxColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/usernameData"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/boxColor"
+        android:fontFamily="@font/roboto"
+        android:hint="      full name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/passwordData"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/boxColor"
+        android:fontFamily="@font/roboto"
+        android:hint="      password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/realUsername" />
+
+    <EditText
+        android:id="@+id/repeatPasswordRegister"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/boxColor"
+        android:fontFamily="@font/roboto"
+        android:inputType="textPassword"
+        android:hint="      repeat password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordData" />
+
+    <EditText
+        android:id="@+id/realUsername"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/boxColor"
+        android:fontFamily="@font/roboto"
+        android:hint="      username"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameData" />
+
+    <Button
+        android:id="@+id/buttonRegisterDB"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cutom_button"
+        android:text="CREATE ACCOUNT"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPasswordRegister" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="236dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="480dp"
+        android:fontFamily="@font/roboto"
+        android:text="Enter your details and you are ready to go"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

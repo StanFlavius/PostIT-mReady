@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    tools:context=".PostActivity">
+
+    <RelativeLayout
+        android:id="@+id/space"
+        android:background="@color/boxColor"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/boxColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+        <Button
+            android:id="@+id/backButtonPost"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Add New Post"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your message..."
+        android:fontFamily="@font/roboto"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="SUBMIT"
+        android:background="@drawable/custom_button_no_round_margin"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="162dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
